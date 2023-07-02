@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.WebChat" parent="Base.Theme.WebChat" />
+
 </resources>

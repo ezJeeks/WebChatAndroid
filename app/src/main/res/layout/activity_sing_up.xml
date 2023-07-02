@@ -25,6 +25,7 @@
             android:textSize="24sp"
             android:textStyle="bold"/>
         <FrameLayout
+            android:id="@+id/layoutImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
@@ -38,6 +39,7 @@
                 app:riv_oval="true"/>
 
             <TextView
+                android:id="@+id/textAddImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -106,16 +108,30 @@
             android:textColor="@color/primary_text"
             android:textSize="17sp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonSignIn"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/sing_up"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"/>
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="@string/sing_up"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"/>
+            
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
 
         <TextView
             android:id="@+id/textSingIn"
