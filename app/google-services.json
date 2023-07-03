@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53192172339",
+    "project_id": "webchatandroid-5d808",
+    "storage_bucket": "webchatandroid-5d808.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53192172339:android:2126780f89d7fad2f15446",
+        "android_client_info": {
+          "package_name": "com.example.webchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53192172339-1qporce9f16sjf153253mc9t00enl4tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxKAxj8LmT3vFc53ojxbjRoQbaT7xQa48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53192172339-1qporce9f16sjf153253mc9t00enl4tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
