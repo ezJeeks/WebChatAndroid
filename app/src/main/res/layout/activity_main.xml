@@ -44,6 +44,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/imageProfile"
@@ -66,7 +67,7 @@
             android:clipToPadding="false"
             android:orientation="vertical"
             android:overScrollMode="never"
-            android:padding="@dimen/_20sdp"
+            android:padding="25dp"
             android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 

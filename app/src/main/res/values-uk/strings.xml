@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WebChat</string>
+    <string name="welcome_back">З поверненням!</string>
+    <string name="login_to_continue">Увійдіть, щоб продовжити</string>
+    <string name="email">Електронна пошта</string>
+    <string name="password">Пароль</string>
+    <string name="create_new_account">Створити новий обліковий запис</string>
+    <string name="sing_in">Sing In</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Ім\'я</string>
+    <string name="confirm_password">Підтвердьте пароль</string>
+    <string name="sing_up">Зареєструватись</string>
+    <string name="type_a_message">Введіть повідомлення</string>
+    <string name="select_user">Виберіть користувача</string>
+    <string name="online">Онлайн</string>
+</resources>

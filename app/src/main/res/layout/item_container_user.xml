@@ -16,6 +16,17 @@
         app:riv_oval="true"/>
 
     <View
+        android:id="@+id/textAvailability"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone"
+        android:background="@drawable/green_dot"
+        app:layout_constraintBottom_toBottomOf="@id/imageProfile"
+        app:layout_constraintEnd_toEndOf="@id/imageProfile" />
+
+    <View
         android:id="@+id/viewSupporter"
         android:layout_width="1dp"
         android:layout_height="1dp"

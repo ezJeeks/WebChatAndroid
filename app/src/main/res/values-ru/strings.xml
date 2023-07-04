@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WebChat</string>
+    <string name="welcome_back">Добро пожаловать!</string>
+    <string name="login_to_continue">Войдите, чтобы продолжить</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="create_new_account">Создать новый аккаунт</string>
+    <string name="sing_in">Войти</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Имя</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="sing_up">Зарегистрироваться</string>
+    <string name="type_a_message">Введите сообщение</string>
+    <string name="select_user">Выберите пользователя</string>
+    <string name="online">В сети</string>
+</resources>

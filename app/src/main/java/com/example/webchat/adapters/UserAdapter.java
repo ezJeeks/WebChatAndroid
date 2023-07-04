@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Base64;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder>{
 
-    private final List<User> users;
+    private List<User> users;
     private final UserListener userListener;
     public UserAdapter(List<User> users, UserListener userListener) {
         this.users = users;
@@ -45,19 +46,30 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         return users.size();
     }
 
-    class  UserViewHolder extends RecyclerView.ViewHolder{
+    public class UserViewHolder extends RecyclerView.ViewHolder{
         ItemContainerUserBinding binding;
+        User user;
 
         UserViewHolder(ItemContainerUserBinding itemContainerUserBinding){
             super(itemContainerUserBinding.getRoot());
             binding = itemContainerUserBinding;
+
         }
         void setUserData(User user){
             binding.textName.setText(user.name);
             binding.textEmail.setText(user.email);
             binding.imageProfile.setImageBitmap(getUserImage(user.image));
+            if (user.isAvailable) {
+                binding.textAvailability.setVisibility(View.VISIBLE);
+            } else {
+                binding.textAvailability.setVisibility(View.GONE);
+            }
             binding.getRoot().setOnClickListener(v -> userListener.onUserClicked(user));
         }
+    }
+    public void updateUserList(List<User> updatedUsers) {
+        users = updatedUsers;
+        notifyDataSetChanged();
     }
 
     private Bitmap getUserImage(String encodedImage){
